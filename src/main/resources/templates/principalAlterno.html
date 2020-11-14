@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/EstiloPrincipal.css">
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <h3 class="text-info">Libreria EGG</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <h3 class="nav-link" th:if="${session.clientesession != null}" th:text="${session.clientesession.nombre + ' ' + session.clientesession.apellido}" ></h3>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/principal/">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">salir</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active"
+                style="background-image: url('https://www.elcorteingles.es/centroscomerciales/uploads/event/main_picture/2906/dia_del_libro-corte_ingl_s.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">LIBROS</h2>
+                    <a class="lead" href="/libro/">Sistema de gestion de Libros</a>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item "
+                style="background-image: url('https://fotos00.diariodeibiza.es/mmp/2020/04/20/1024x341/escritores.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">AUTORES</h2>
+                    <a class="lead" href="/autor/">Sistema de gestion de autores.</a>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item"
+                style="background-image: url('https://miro.medium.com/max/1000/0*nPOxe5QxL6ogH-29.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Editoriales</h2>
+                    <a class="lead" href="/editorial/">Sistema de gestion de editoriales.</a>
+                </div>
+            </div>
+            <div class="carousel-item "
+                style="background-image: url('https://villamariavivo.com/wp-content/uploads/2020/04/librerias.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Prestamos</h2>
+                    <a class="lead" href="/prestamo/">Sistema de gestion de prestamos.</a>
+                </div>
+            </div>
+            <div class="carousel-item "
+                style="background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/01/estudiantes_no_rinden.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Clientes</h2>
+                    <a class="lead" href="/cliente/">Sistema de gestion de clientes.</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">siguiente</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+</html>

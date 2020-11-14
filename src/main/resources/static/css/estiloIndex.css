@@ -1,0 +1,117 @@
+/* */
+
+/* Selectores */
+
+    /* Etiquetas */
+    body{
+
+       
+       
+        font-size: 25px;
+        font-family: 'Staatliches', cursive;
+        background-image: url(https://patricamporahome.files.wordpress.com/2019/11/la-vida-a-traves-de-los-libros.jpg?w=1200);
+    }
+    header{
+        padding: 20px;
+        margin-bottom: 20px;
+     
+        text-align: center;
+    }
+    #formulario{
+        text-decoration: solid;
+      
+     padding: 5%;
+    
+       
+    }
+    label{
+        width: 100%;
+        display: block;
+        padding-bottom: 10px; 
+    }
+
+    /* Id */
+    #main-section{
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: left;
+       border: 0ch;
+        background-position: right;
+        width: 100vw;
+        padding: 20px 0;
+    }
+    
+   
+  
+
+    /* Clases */
+    .subtitle{
+        padding: 15px 0 30px;
+    }
+    .section{
+        padding: 0 60px;
+    }
+    .ul{
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
+        .ul li {
+            padding: 0 20px;
+        }
+    .link {
+        padding: 10px 20px;
+        color: grey;
+        text-decoration: none;
+        font-weight: 700;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+        .link.btn {
+            display: block;
+            position: relative;
+            margin: 20px auto 0;
+            width: 80%;
+        }
+    .form-group{
+        padding: 10px;
+    }
+    .input{
+        padding: 8px 15px;
+        border: solid 1px grey;
+        border-radius: 5px;
+    }
+
+    /* por atributo */
+    button[type="submit"] {
+       
+        background-color: wheat;
+
+    }
+    p:hover, h1:hover, a:hover {
+        color:blue;
+     }
+
+/* Pseudo-Selectores */   
+
+    /* Pseudo-Clases */
+    #main-section .section:first-child{
+        max-width: 450px;
+    }
+    .form-group:last-child{
+        width:100%;
+    }
+
+    .link:hover{
+        color:white;
+        background-color:grey;
+    }
+    .input:focus{
+        color: grey;
+        outline-color: green;
+    }
+    /* Pseudo-Elementos */
+    .link::after{
+
+    }

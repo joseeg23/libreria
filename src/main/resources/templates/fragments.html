@@ -1,0 +1,43 @@
+<div th:fragment="navbarlibro">
+<nav class="p-3 mb-2 bg-dark text-white">
+    <a style="font-size: large; text-align:left;" href="/libro/">VOLVER</a>
+    <h3 class="text-info" style="text-align: right;"
+     th:if="${session.clientesession != null}"  th:text="${session.clientesession.nombre + ' ' +session.clientesession.apellido}"></h3>
+  </nav>
+</div>
+
+<div th:fragment="navbarautor">
+    <nav class="p-3 mb-2 bg-dark text-white">
+        <a style="font-size: large; text-align:left;" href="/autor/"> VOLVER</a>
+        <h3 class="text-info" style="text-align: right;"
+         th:if="${session.clientesession != null}"  th:text="${session.clientesession.nombre + ' ' +session.clientesession.apellido}"></h3>
+      </nav>
+  
+    </div>
+
+    <div th:fragment="navbareditorial">
+      <nav class="p-3 mb-2 bg-dark text-white">
+          <a style="font-size: large; text-align:left;" href="/editorial/"> VOLVER</a>
+          <h3 class="text-info" style="text-align: right;"
+           th:if="${session.clientesession != null}"  th:text="${session.clientesession.nombre + ' ' +session.clientesession.apellido}"></h3>
+        </nav>
+    
+      </div>
+      
+    <div th:fragment="navbarprestamo">
+      <nav class="p-3 mb-2 bg-dark text-white">
+          <a style="font-size: large; text-align:left;" href="/prestamo/"> VOLVER</a>
+          <h3 class="text-info" style="text-align: right;"
+           th:if="${session.clientesession != null}"  th:text="${session.clientesession.nombre + ' ' +session.clientesession.apellido}"></h3>
+        </nav>
+    
+      </div>
+      
+    <div th:fragment="navbarcliente">
+      <nav class="p-3 mb-2 bg-dark text-white">
+          <a style="font-size: large; text-align:left;" href="/cliente/"> VOLVER</a>
+          <h3 class="text-info" style="text-align: right;"
+           th:if="${session.clientesession != null}"  th:text="${session.clientesession.nombre + ' ' +session.clientesession.apellido}"></h3>
+        </nav>
+    
+      </div>
